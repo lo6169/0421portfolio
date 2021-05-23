@@ -137,22 +137,15 @@ h1
     grid-auto-rows: 1fr;
 }
 
-.grid-container > div:nth-child(odd)
+.grid-container > div
 {
     background-color: #a1e9ff;
     border: 1px solid #303030;
     border-radius: 15px;
     padding: 1%;
     text-align: center;
-}
-
-.grid-container > div:nth-child(even)
-{
-    background-color:#a1e9ff;
-    border: 1px solid #303030;
-    border-radius: 15px;
-    padding: 1%;
-    text-align: center;
+    margin-top: 2%;
+    box-shadow: 5px 5px 10px grey inset;
 }
 
 .title
@@ -164,9 +157,15 @@ h1
 
 .info 
 {
+    color: #303030;
     text-align: left;
     padding: 2%;
     line-height: 150%;
+}
+
+.projectimage
+{
+    max-width: 100%;
 }
 
 /* 
