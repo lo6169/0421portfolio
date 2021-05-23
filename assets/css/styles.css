@@ -1,0 +1,248 @@
+html 
+{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body 
+{
+    background-color: #303030;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00A5D7;
+    font-size: 1.25em;
+}
+
+li 
+{
+    float: left;
+}
+
+li a 
+{
+    display: block;
+    color: #303030;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #11FFB8;
+}
+
+.column 
+{
+    float: left;
+    width: 54%;
+    padding: 1%;
+    height: 100%;
+    color: #00A5D7;
+}
+
+.column2
+{
+    float: left;
+    width: 42%;
+    padding: 1%;
+    height: 100%;
+    color: #00A5D7;
+}
+
+.columnhalf
+{
+    float: left;
+    width: 48%;
+    padding: 1%;
+    color: #00A5D7;
+    font-size: 1.25em;
+    margin-top: 3%;
+    line-height: 200%;
+}
+  
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.boldmint
+{
+    font-weight: bold;
+    color: #11FFB8;
+}
+
+h1 
+{
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+.desc 
+{
+    font-size: 1.25em;
+}
+
+.headshot
+{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    max-height: 75%;
+}
+
+.plainurl
+{
+    color: #00A5D7;
+}
+
+.fauxbutton
+{
+    color: #00A5D7;
+    padding: 2%;
+    border-radius: 10px;
+    border: 3px solid #00A5D7;
+}
+
+.fauxbutton:hover 
+{
+    background-color: #11FFB8;
+    color: #303030;
+}
+
+.silh 
+{
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    max-width: 20%;
+}
+
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-auto-rows: 1fr;
+}
+
+.grid-container > div:nth-child(odd)
+{
+    background-color: #11FFB8;
+    border: 1px solid #303030;
+    border-radius: 15px;
+    padding: 1%;
+    text-align: center;
+}
+
+.grid-container > div:nth-child(even)
+{
+    background-color: #00A5D7;
+    border: 1px solid #303030;
+    border-radius: 15px;
+    padding: 1%;
+    text-align: center;
+}
+
+.title
+{
+    color: #303030;
+    font-size: 1.25em;
+}
+
+.info 
+{
+    text-align: left;
+    padding: 2%;
+}
+
+/* 
+Media query for machines under 400px
+*/
+@media only screen and (max-width: 950px) {
+
+}
+
+/* 
+Media query for machines under 950px
+*/
+@media only screen and (max-width: 950px) {
+    .column 
+    {
+        float: left;
+        width: 100%;
+        padding: 1%;
+        height: 100%;
+        color: #00A5D7;
+    }
+
+    .column2
+    {
+        float: left;
+        width: 100%;
+        padding: 1%;
+        height: 100%;
+        color: #00A5D7;
+    }
+
+    .headshot
+    {
+        position: absolute;
+        bottom: 0px;
+        max-width: 65%;
+        margin-left: 15%;
+    }
+}
+
+/* 
+Media query for desktops over 1500px
+*/
+@media only screen and (min-width: 1500px) {
+    .headshot
+    {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        min-height: 70%;
+    }
+
+    h1 
+    {
+        font-size: 3.5em;
+    }
+
+    .desc 
+    {
+        font-size: 2em;
+    }
+
+    ul 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #00A5D7;
+        font-size: 2em;
+    }
+
+    li a 
+    {
+        display: block;
+        color: #303030;
+        text-align: center;
+        padding: 20px 32px;
+        text-decoration: none;
+    }
+}
