@@ -131,7 +131,7 @@ h1
 .grid-container 
 {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     grid-gap: 10px;
     padding: 10px;
     grid-auto-rows: 1fr;
@@ -139,7 +139,7 @@ h1
 
 .grid-container > div:nth-child(odd)
 {
-    background-color: #11FFB8;
+    background-color: #a1e9ff;
     border: 1px solid #303030;
     border-radius: 15px;
     padding: 1%;
@@ -148,7 +148,7 @@ h1
 
 .grid-container > div:nth-child(even)
 {
-    background-color: #00A5D7;
+    background-color:#a1e9ff;
     border: 1px solid #303030;
     border-radius: 15px;
     padding: 1%;
@@ -159,12 +159,14 @@ h1
 {
     color: #303030;
     font-size: 1.25em;
+    font-weight: bold;
 }
 
 .info 
 {
     text-align: left;
     padding: 2%;
+    line-height: 150%;
 }
 
 /* 
