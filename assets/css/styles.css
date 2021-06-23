@@ -241,18 +241,51 @@ h1
 /* 
 Media query for machines under 400px
 */
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 400px) {
+    ul 
+    {
+        font-size: 0.5em;
+    }
 
+    h1 
+    {
+        font-size: 1.5em;
+    }
+
+    .desc 
+    {
+        font-size: 0.75em;
+    }
+}
+
+/* 
+Media query for machines under 530px
+*/
+@media only screen and (max-width: 530px) {
+    .nameLink
+    {
+        visibility: hidden;
+    }
+
+    ul
+    {
+        font-size: 0.75em;
+    }
 }
 
 /* 
 Media query for machines under 950px
 */
 @media only screen and (max-width: 950px) {
+    body 
+    {
+        overflow: visible;
+    }
+
     .column 
     {
         float: left;
-        width: 100%;
+        width: 98%;
         padding: 1%;
         height: 100%;
         color: #00A5D7;
@@ -261,7 +294,7 @@ Media query for machines under 950px
     .column2
     {
         float: left;
-        width: 100%;
+        width: 98%;
         padding: 1%;
         height: 100%;
         color: #00A5D7;
@@ -269,10 +302,17 @@ Media query for machines under 950px
 
     .headshot
     {
-        position: absolute;
-        bottom: 0px;
-        max-width: 65%;
-        margin-left: 15%;
+        visibility: hidden;
+    }
+}
+
+/* 
+Media query for desktops under 1050px
+*/
+@media only screen and (max-width: 1050px) {
+    .headshot 
+    {
+        max-height: 50%;
     }
 }
 
