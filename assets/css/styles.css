@@ -178,7 +178,47 @@ h1
     max-width: 100%;
 }
 
-.flip-card 
+.container 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.75em;
+    margin: 3%;
+    overflow: hidden;
+}
+
+.container div 
+{
+    aspect-ratio: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text 
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding-top: 30%;
+}
+
+.text:hover 
+{
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s;
+}
+
+
+
+/*.flip-card 
 {
     background-color: transparent;
     width: 300px;
@@ -237,6 +277,40 @@ h1
     height: 300px;
     border-radius: 5%;
 }
+
+.projectCards {
+    display: inline;
+    margin-bottom: 2%;
+}
+
+.projectCard {
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+    background-color: white;
+    margin: 3%;
+    position: relative;
+    float: left;
+}
+
+.projectCard .top {
+    position: absolute;
+    top: 10px;
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.projectCard .bottom {
+    position: absolute;
+    bottom: 10px;
+    height: auto;
+    width: 100%;
+    padding: 2%;
+} */
+
 
 /* 
 Media query for machines under 400px

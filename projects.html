@@ -18,7 +18,32 @@
         <li style="float:right"><a href="index.html">About</a></li>
     </ul>
 
-    <div class="cards">
+    <div class="container">
+        <div style="position: relative;">
+            <div class="container-element" style="background-image: url(./assets/media/pef.JPG)"
+                onmouseover="showImage('PEF', 1)" onmouseout="showImage('PEF', 0)"> 
+                <div id="PEF" class="text"> Ponaganset Education Foundation </div>
+            </div>
+        </div>
+
+        <div style="position: relative;">
+            <div class="container-element" style="background-image: url(./assets/media/30days.png)"
+                onmouseover="showImage('30days', 1)" onmouseout="showImage('30days', 0)"> 
+                <div id="30days" class="text"> 30 Days of Web Design </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script> 
+        function showImage(id, opacityValue) {
+            document.getElementById(id).style.opacity = opacityValue;
+        }
+    </script>
+
+
+   <!-- <div class="cards">
         <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -60,7 +85,7 @@
             </div>
           </div>
 
-    </div>
+    </div>-->
     
 
     <!-- <div class="grid-container">
