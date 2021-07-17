@@ -217,100 +217,29 @@ h1
     -webkit-transition: 1s;
 }
 
-
-
-/*.flip-card 
-{
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    float: left;
-    margin: 2%;
-}
-
-.flip-card-inner 
-{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner 
-{
-    transform: rotateY(-540deg);
-}
-
-.flip-card-front, .flip-card-back 
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 5%;
-}
-
-.flip-card-front 
-{
-    background-color: #00A5D7;
-    color: black;
-}
-
-.flip-card-back 
-{
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-.cards 
-{
-    padding: 2%;
-}
-
-.cardImage 
-{
-    width: 300px;
-    height: 300px;
-    border-radius: 5%;
-}
-
-.projectCards {
-    display: inline;
-    margin-bottom: 2%;
-}
-
-.projectCard {
-    width: 300px;
-    height: 500px;
-    border-radius: 25px;
+.card {
+    width: 70%;
+    margin-left: 12%;
+    padding: 3%;
     background-color: white;
-    margin: 3%;
-    position: relative;
-    float: left;
+    border-radius: 25px;
+    box-shadow: 10px 5px 25px black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 150%;
 }
 
-.projectCard .top {
-    position: absolute;
-    top: 10px;
-    height: 50%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.projectList {
+    list-style-type: disc; 
+    list-style-position: inside; 
+    background-color: white;
+    font-size: 1em;
+    margin-left: 25px;
 }
 
-.projectCard .bottom {
-    position: absolute;
-    bottom: 10px;
-    height: auto;
-    width: 100%;
-    padding: 2%;
-} */
+.projectList li {
+    display: list-item;
+}
 
 
 /* 
