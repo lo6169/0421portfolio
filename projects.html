@@ -18,7 +18,7 @@
         <li style="float:right"><a href="index.html">About</a></li>
     </ul>
 
-    <div class="container">
+    <div class="container" id="ponaganset" onclick="openPage('ponaganset')">
         <div style="position: relative;">
             <div class="container-element" style="background-image: url(./assets/media/pef.JPG)"
                 onmouseover="showImage('PEF', 1)" onmouseout="showImage('PEF', 0)"> 
@@ -26,10 +26,45 @@
             </div>
         </div>
 
-        <div style="position: relative;">
+        <div style="position: relative;" id="thirtydays" onclick="openPage('thirtydays')">
             <div class="container-element" style="background-image: url(./assets/media/30days.png)"
                 onmouseover="showImage('30days', 1)" onmouseout="showImage('30days', 0)"> 
                 <div id="30days" class="text"> 30 Days of Web Design </div>
+            </div>
+        </div>
+
+        <div style="position: relative;" id="freelance" onclick="openPage('freelance')">
+            <div class="container-element" style="background-image: url(./assets/media/andrewsite.JPG)"
+                onmouseover="showImage('andrew', 1)" onmouseout="showImage('andrew', 0)"> 
+                <div id="andrew" class="text"> Freelance Portfolio </div>
+            </div>
+        </div>
+
+        <div style="position: relative;" id="uxstudio" onclick="openPage('uxstudio')">
+            <div class="container-element" style="background-image: url(./assets/media/cfc.JPG)"
+                onmouseover="showImage('cfc', 1)" onmouseout="showImage('cfc', 0)"> 
+                <div id="cfc" class="text"> UX Studio - 2021 </div>
+            </div>
+        </div>
+
+        <div style="position: relative;" id="willowtree" onclick="openPage('willowtree')">
+            <div class="container-element" style="background-image: url(./assets/media/wta.JPG)"
+                onmouseover="showImage('wta', 1)" onmouseout="showImage('wta', 0)"> 
+                <div id="wta" class="text"> WillowTree Apps </div>
+            </div>
+        </div>
+
+        <div style="position: relative;" id="massmutual" onclick="openPage('massmutual')">
+            <div class="container-element" style="background-image: url(./assets/media/mm.JPG)"
+                onmouseover="showImage('mm', 1)" onmouseout="showImage('mm', 0)"> 
+                <div id="mm" class="text"> MassMutual </div>
+            </div>
+        </div>
+
+        <div style="position: relative;" id="personalportfolio" onclick="openPage('portfolio')">
+            <div class="container-element" style="background-image: url(./assets/media/portfolio.JPG);"
+                onmouseover="showImage('portfolio', 1)" onmouseout="showImage('portfolio', 0)"> 
+                <div id="portfolio" class="text"> Personal Portfolio </div>
             </div>
         </div>
 
@@ -39,6 +74,11 @@
     <script> 
         function showImage(id, opacityValue) {
             document.getElementById(id).style.opacity = opacityValue;
+        }
+
+        function openPage(pageName) {
+            var page = pageName + ".html";
+            window.open(page);
         }
     </script>
 

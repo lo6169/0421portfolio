@@ -198,7 +198,6 @@ h1
 .text 
 {
     width: 100%;
-    height: auto;
     text-align: center;
     z-index: 2;
     position: absolute;
@@ -206,6 +205,8 @@ h1
     left: 0;
     opacity: 0;
     padding-top: 30%;
+    height: 70%;
+    cursor: pointer;
 }
 
 .text:hover 
