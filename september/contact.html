@@ -24,27 +24,32 @@
 
     <div class="title-box">
         <div class="text"> 
-            Hi there, I'm Lindsey! <br/>
+            Talk to me! <br/>
         </div>
     </div>
 
-    <div class="intro">
-        <img src="media/headshot.png" alt="Photograph of my headshot with a blue background.">
-
-        <div class="text">
-            I'm a senior at Rochester Institute of Technology set to graduate in May, 2022
-            with a Bachelor's in Web and Mobile Computing. I have a concentration in Mobile
-            Development, a concentration in Wearable and Ubiquitous Computing, and an immersion
-            in American Sign Language and Deaf Cultural Studies. <br/>
-            I currently live in Rochester, NY and I grew up in a small town in Rhode Island. Where will
-            I be in a year? Who knows? I'm seeking a career after graduation that will allow me to grow
-            and develop personally and professionally. <br/>
-            When I'm not learning or working, you can find me hanging out with my dog, doing chainmaille,
-            practicing ASL, or wandering around Michael's looking for my next project (and maybe
-            spending far too much moneys).
-        </div>
+    <div class="form">
+        <form action="" method="post">
+            <p>
+                <label for="fname" type="text">First Name: </label>
+                <input id="fname" type="text" name="first_name" placeholder="First Name">
+            </p>
+            <p>
+                <label for="lname" type="text">Last Name: </label>
+                <input id="lname" type="text" name="last_name" placeholder="Last Name">
+            </p>
+            <p>
+                <label for="email" type="text">Email: </label>
+                <input id="email" type="text" name="email" placeholder="Email">
+            </p>
+            <p>
+                <label for="message" type="text"></label> 
+                <textarea id="message" rows="5" name="message" cols="30" 
+                placeholder="Your message here..."></textarea><br>
+            </p>
+            <input type="submit" name="submit" value="Send Email">
+        </form>
     </div>
-
 
     <div class="footer">
         C 2021 <br/>

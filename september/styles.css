@@ -13,6 +13,7 @@ html {
     float: left;
     font-size: 1.15em;
     padding: 14px 16px;
+    color: #00A5D7;
 }
 
 .header ul {
@@ -45,12 +46,71 @@ html {
     height: 10rem;
     background: rgb(0,165,215);
     background: linear-gradient(90deg, rgba(0,165,215,0.5) 0%, rgba(250,255,0,0.5) 100%);
+
+    text-align: center;
+}
+
+.title-box .text {
+    padding-top: 7rem;
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.intro {
+    width: 100%;
+    text-align: center;
+}
+
+.intro img {
+    border-radius: 50%;
+    border: 3px solid #00A5D7;
+    max-width: 25%;
+    margin: 2rem;
+}
+
+.intro .text {
+    width: 50%;
+    margin-left: 25%;
+    text-align: left;
+    line-height: 150%;
+}
+
+input[type=text], textarea {
+    margin: 10px;
+    padding: 5px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+input[type=submit] {
+    padding: 10%;
+    background-color: #00A5D7;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #303030;
+}
+
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+
+.form {
+    width: 50%;
+    margin-left: 40%;
 }
 
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
+    margin-top: 1.5rem;
+    border-top: 1px solid lightgray;
+    padding: 1rem;
 }
