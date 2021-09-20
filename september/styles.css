@@ -73,10 +73,26 @@ html {
     width: 50%;
     margin-left: 25%;
     text-align: left;
-    line-height: 150%;
+    line-height: 175%;
+    margin-top: 2rem;
+}
+
+.intro .text .plainURL {
+    text-decoration: none;
+    color: #00A5D7;
+}
+
+.intro .text .plainURL:hover {
+    text-decoration: none;
+    color: #173b67;;
+}
+
+form {
+    padding: 2%;
 }
 
 input[type=text], textarea {
+    width: 125%;
     margin: 10px;
     padding: 5px;
     border:0;
@@ -84,7 +100,8 @@ input[type=text], textarea {
 }
 
 input[type=submit] {
-    padding: 10%;
+    padding: 5%;
+    margin: 10px;
     background-color: #00A5D7;
     color: white;
     border-radius: 5px;
@@ -102,7 +119,7 @@ input { display: table-cell; }
 
 .form {
     width: 50%;
-    margin-left: 40%;
+    margin-left: 25%;
 }
 
 .footer {
