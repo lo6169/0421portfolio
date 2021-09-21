@@ -28,9 +28,9 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lindsey Olson - Developer</title>
+    <title>Contact Me - Lindsey Olson - Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -39,25 +39,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-    <div class="header">
-        <div class="name"> 
+<header>
+        <div class="name" aria-role="title"> 
             Lindsey Olson
         </div>
-        <ul>
+        <ul aria-role="navigation">
             <li><a href="contact.php">contact</a></li>
             <li><a href="projects.html">projects</a></li>
             <li><a href="index.html">home</a></li>
         </ul>
-    </div>
+    </header>
 
     <div class="title-box">
-        <div class="text"> 
+        <h1> 
             Talk to me! <br/>
-        </div>
+        </h1>
     </div>
 
     <div class="intro">
-        <div class="text">
+        <div class="text" aria-role="contentinfo">
             Questions about who I am, what I do, or just want someone to talk to? Feel free to
              send me an email below, connect with me on <a href="www.linkedin.com/in/l-olson" 
              class="plainURL"> LinkedIn, </a>or send a carrier pigeon to Rochester, NY and 
@@ -68,28 +68,29 @@
         </div>
     </div>
 
-    <div class="form">
+    <div class="form" aria-label="Contact Form">
         <form action="" method="POST" action="contact.php">
             <p>
                 <label for="fname" type="text">First Name: </label>
-                <input id="fname" type="text" name="first_name" placeholder="First Name">
+                <input id="fname" type="text" name="first_name" placeholder="First Name" aria-role="textbox">
             </p>
             <p>
                 <label for="lname" type="text">Last Name: </label>
-                <input id="lname" type="text" name="last_name" placeholder="Last Name">
+                <input id="lname" type="text" name="last_name" placeholder="Last Name" aria-role="textbox">
             </p>
             <p>
                 <label for="email" type="text">Email: </label>
-                <input id="email" type="text" name="email" placeholder="Email">
+                <input id="email" type="text" name="email" placeholder="Email" aria-role="textbox">
             </p>
             <p>
                 <label for="message" type="text"></label> 
                 <textarea id="message" rows="5" name="message" cols="30" 
-                placeholder="Your message here..."></textarea><br>
+                    placeholder="Your message here..." aria-role="textbox"></textarea><br>
             </p>
             <p>
                 <label for="submit" type="text"></label>
-                <input type="submit" name="submit" value="Send Email">
+                <input aria-label="Submit form" aria-role="button" type="submit" 
+                    name="submit" value="Send Email">
             </p>
         </form>
     </div>
@@ -98,11 +99,11 @@
 
     </div>
 
-    <div class="footer">
-        C 2021 <br/>
-        <a href="www.github.com/lo6169"> Github </a> <br/>
+    <footer>
+        Ⓒ 2021 <br/>
+        <a href="www.github.com/lo6169"> Github </a> |
         <a href="www.linkedin.com/in/l-olson"> LinkedIn </a>
-    </div>
+    </footer>
 
 </body>
 </html>

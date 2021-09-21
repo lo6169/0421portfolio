@@ -5,19 +5,19 @@ html {
     scroll-behavior: smooth;
 }
 
-.header {
+header {
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.header .name {
+header .name {
     float: left;
     font-size: 1.15em;
     padding: 14px 16px;
-    color: #00A5D7;
+    color: #173b67;
 }
 
-.header ul, .quicklinks ul {
+header ul, .quicklinks ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,11 +25,11 @@ html {
     font-size: 1.15em;
 }
 
-.header li, .quicklinks li {
+header li, .quicklinks li {
     float: right;
 }
 
-.header li a, .quicklinks li a {
+header li a, .quicklinks li a {
     display: block;
     color: #303030;
     text-align: center;
@@ -38,7 +38,7 @@ html {
     border-bottom: 3px solid white;
 }
 
-.header li a:hover, .quicklinks li a:hover {
+header li a:hover, .quicklinks li a:hover {
     border-bottom: 3px solid rgba(0,165,215);
 }
 
@@ -51,11 +51,12 @@ html {
     text-align: center;
 }
 
-.title-box .text {
+.title-box h1 {
     padding-top: 7rem;
     position: relative;
     font-size: 1.25rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .intro {
@@ -180,7 +181,7 @@ input { display: table-cell; }
     font-size: 0.95em;
 }
   
-.footer {
+footer {
     left: 0;
     bottom: 0;
     width: 100%;
@@ -188,4 +189,12 @@ input { display: table-cell; }
     margin-top: 1.5rem;
     border-top: 1px solid lightgray;
     padding: 1rem;
+}
+
+footer a {
+    color: #173b67;
+}
+
+footer a:hover {
+    color: #00A5D7;
 }
