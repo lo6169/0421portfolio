@@ -128,10 +128,6 @@ input { display: table-cell; }
     margin-left: 25%;
 }
 
-.quicklinks {
-    float: left;
-}
-
 .projects {
     width: 100%;
     margin-top: 5rem;
@@ -179,6 +175,18 @@ input { display: table-cell; }
 .projects .project .col .info {
     float: left;
     font-size: 0.95em;
+}
+
+.blog {
+    width: 70%;
+    margin-left: 15%;
+    line-height: 150%;
+}
+
+.blog img {
+    width: 50%;
+    margin-left: 25%;
+    padding: 1% 0 1% 0;
 }
   
 footer {
